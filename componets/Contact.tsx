@@ -18,7 +18,7 @@ const Contact = () => {
         
         {/* Header */}
         <div className="max-w-3xl mb-16">
-          <h2 className="text-[#A87C51] font-bold uppercase tracking-[0.3em] text-[10px] mb-4">
+          <h2 className="text-[#A87C51] font-bold uppercase tracking-widest text-md">
             Connect With Us
           </h2>
           <h3 className="text-5xl md:text-6xl font-serif text-stone-800 leading-tight">
@@ -55,7 +55,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-stone-800 mb-1">Email Us</h4>
-                  <p className="text-stone-500 font-light">hello@terraform.farm</p>
+                  <p className="text-stone-500 font-light">judithfarmandfeeds@gmai.com</p>
                 </div>
               </div>
 

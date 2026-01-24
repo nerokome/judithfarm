@@ -17,14 +17,14 @@ const collections = [
     id: 2,
     title: "Premium Fish Feed",
     subtitle: "Floating & Sinking Aquaculture Feed",
-    img: "/fish-feed.jpg",
+    img: "/fishfeed.jpg",
     accent: "bg-cyan-500/10 text-cyan-700",
   },
   {
     id: 3,
     title: "Farm Fresh Eggs",
     subtitle: "Nutritious, Hygienic & Daily Harvest",
-    img: "/eggs.jpg",
+    img: "/egg.jpg",
     accent: "bg-yellow-500/10 text-yellow-700",
   },
   {
@@ -38,7 +38,7 @@ const collections = [
     id: 5,
     title: "Chicken Feed Supply",
     subtitle: "Starter, Grower & Finisher Feeds",
-    img: "/chicken-feed.jpg",
+    img: "/chickfeed.jpg",
     accent: "bg-amber-500/10 text-amber-700",
   },
 ];
@@ -48,18 +48,18 @@ const Produce = () => {
     <section id="produce" className="py-24 bg-white scroll-mt-32">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="max-w-2xl mb-16">
-          <h2 className="text-[#A87C51] font-bold uppercase tracking-[0.3em] text-[10px] mb-4">
+        <div className="space-y-4 text-center lg:text-left">
+          <h2 className="text-[#A87C51] font-bold uppercase tracking-widest text-md">
             Our Products
           </h2>
-          <h3 className="text-5xl md:text-6xl font-serif text-stone-800 leading-tight">
+          <h3 className="text-3xl md:text-6xl font-serif text-stone-800 leading-tight">
             Reliable supply from our <br />
             <span className="italic text-[#2D5A27]">fish & poultry farms.</span>
           </h3>
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
           {collections.map((item, idx) => (
             <motion.div
               key={item.id}

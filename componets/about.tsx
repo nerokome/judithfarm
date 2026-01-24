@@ -35,7 +35,7 @@ const About = () => {
           className="order-1 space-y-8"
         >
           <div className="space-y-4 text-center lg:text-left">
-            <h2 className="text-[#A87C51] font-bold uppercase tracking-widest text-xs">
+            <h2 className="text-[#A87C51] font-bold uppercase tracking-widest text-md">
               Who We Are
             </h2>
 
@@ -55,7 +55,7 @@ const About = () => {
             </p>
 
             <p className="text-base md:text-lg text-stone-500 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light">
-              Every stage—feeding, growth, and handling—is carefully managed
+              Every stage feeding, growth, and handling is carefully managed
               to deliver products that meet the needs of households, retailers,
               and bulk buyers.
             </p>
