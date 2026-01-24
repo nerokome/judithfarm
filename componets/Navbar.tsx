@@ -41,7 +41,7 @@ const Navbar = () => {
             <div className="bg-[#2D5A27] p-2 rounded-xl group-hover:rotate-[15deg] transition-transform duration-300">
               <RiLeafLine size={22} className="text-white" />
             </div>
-            <span className="text-xl font-bold tracking-tighter text-stone-800 uppercase">
+            <span className="text-md sm:text-xl font-bold tracking-tighter text-stone-800 uppercase">
               Juduko Farms and <span className="text-[#2D5A27]">Feeds</span>
             </span>
           </Link>
