@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { HiMenuAlt3, HiX, HiOutlineShoppingBag } from 'react-icons/hi'; // Heroicons set
-import { RiLeafLine } from 'react-icons/ri'; // Remix Icon set
+import { HiMenuAlt3, HiX, HiOutlineShoppingBag } from 'react-icons/hi'; 
+import { RiLeafLine } from 'react-icons/ri'; 
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -19,10 +19,10 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Our Story', href: '/about' },
-    { name: 'Produce', href: '/produce' },
-    { name: 'Sustainability', href: '/sustainability' },
-    { name: 'Journal', href: '/blog' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Produce', href: '/sustainability' },
+    { name: 'Contact', href: '/blog' },
   ];
 
   return (
@@ -42,7 +42,7 @@ const Navbar = () => {
               <RiLeafLine size={22} className="text-white" />
             </div>
             <span className="text-xl font-bold tracking-tighter text-stone-800 uppercase">
-              Terra<span className="text-[#2D5A27]">form</span>
+              Juduko Farms and <span className="text-[#2D5A27]">Feeds</span>
             </span>
           </Link>
 
