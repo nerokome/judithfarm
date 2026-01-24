@@ -45,9 +45,8 @@ const collections = [
 
 const Produce = () => {
   return (
-    <section className="py-24 bg-white">
+    <section id="produce" className="py-24 bg-white scroll-mt-32">
       <div className="max-w-7xl mx-auto px-6">
-        
         {/* Header */}
         <div className="max-w-2xl mb-16">
           <h2 className="text-[#A87C51] font-bold uppercase tracking-[0.3em] text-[10px] mb-4">
@@ -78,10 +77,8 @@ const Produce = () => {
                   fill
                   className="object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
-
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
-
                 {/* Arrow */}
                 <div className="absolute bottom-8 right-8 w-12 h-12 bg-white rounded-full flex items-center justify-center text-stone-800 opacity-0 scale-50 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 shadow-xl">
                   <HiOutlineArrowRight size={20} />

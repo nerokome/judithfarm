@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { 
   RiMailLine, 
   RiMapPinLine, 
-  RiPhoneLine, 
   RiTimeLine,
   RiInstagramLine,
   RiFacebookCircleLine,
@@ -14,7 +13,7 @@ import {
 
 const Contact = () => {
   return (
-    <section className="py-24 bg-[#FBFBFA]">
+    <section id="contact" className="py-24 bg-[#FBFBFA] scroll-mt-32">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header */}
@@ -33,9 +32,8 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           
-          {/* LEFT: Contact Info (Order-2 on mobile for better flow) */}
+          {/* LEFT: Contact Info */}
           <div className="lg:col-span-5 order-2 lg:order-1 space-y-12">
-            
             {/* Info Cards */}
             <div className="space-y-8">
               <div className="flex gap-6">
@@ -46,7 +44,7 @@ const Contact = () => {
                   <h4 className="font-bold text-stone-800 mb-1">Visit The Farm</h4>
                   <p className="text-stone-500 font-light leading-snug">
                     1242 ,<br />
-                    warri, Delta state 90210
+                    Warri, Delta State 90210
                   </p>
                 </div>
               </div>
@@ -85,7 +83,7 @@ const Contact = () => {
             </div>
           </div>
 
-         
+          {/* RIGHT: Contact Form */}
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
