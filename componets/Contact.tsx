@@ -45,8 +45,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-bold text-stone-800 mb-1">Visit The Farm</h4>
                   <p className="text-stone-500 font-light leading-snug">
-                    1242 Greenway Drive,<br />
-                    Rolling Hills, CA 90210
+                    1242 ,<br />
+                    warri, Delta state 90210
                   </p>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* RIGHT: Contact Form (Order-1 on mobile) */}
+         
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -96,11 +96,11 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-[10px] font-bold uppercase tracking-widest text-stone-400 ml-1">Full Name</label>
-                  <input type="text" placeholder="John Doe" className="w-full px-6 py-4 bg-stone-50 border border-stone-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#2D5A27]/20 focus:bg-white transition-all" />
+                  <input type="text" placeholder="Fullname" className="w-full px-6 py-4 bg-stone-50 border border-stone-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#2D5A27]/20 focus:bg-white transition-all" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-[10px] font-bold uppercase tracking-widest text-stone-400 ml-1">Email Address</label>
-                  <input type="email" placeholder="john@example.com" className="w-full px-6 py-4 bg-stone-50 border border-stone-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#2D5A27]/20 focus:bg-white transition-all" />
+                  <input type="email" placeholder="Email Address" className="w-full px-6 py-4 bg-stone-50 border border-stone-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#2D5A27]/20 focus:bg-white transition-all" />
                 </div>
               </div>
 
