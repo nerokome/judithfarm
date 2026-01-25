@@ -59,7 +59,7 @@ const Produce = () => {
           </h3>
         </div>
 
-        {/* Products Grid */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
           {collections.map((item, idx) => (
             <motion.div
@@ -70,23 +70,24 @@ const Produce = () => {
               transition={{ delay: idx * 0.1 }}
               className="group cursor-pointer"
             >
-              {/* Image */}
+              
               <div className="relative aspect-[16/10] md:aspect-[16/9] rounded-[2.5rem] overflow-hidden mb-6 shadow-sm group-hover:shadow-2xl transition-all duration-700 border border-stone-100">
                 <Image
                   src={item.img}
                   alt={item.title}
                   fill
                   className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                  loading="lazy"
                 />
-                {/* Overlay */}
+               
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
-                {/* Arrow */}
+                
                 <div className="absolute bottom-8 right-8 w-12 h-12 bg-white rounded-full flex items-center justify-center text-stone-800 opacity-0 scale-50 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 shadow-xl">
                   <HiOutlineArrowRight size={20} />
                 </div>
               </div>
 
-              {/* Text */}
+              
               <div className="flex justify-between items-start px-2">
                 <div>
                   <div
@@ -106,7 +107,7 @@ const Produce = () => {
           ))}
         </div>
 
-        {/* CTA */}
+        
         <div className="mt-20 border-t border-stone-100 pt-12 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <p className="text-stone-500 font-light max-w-sm">
             Supplying restaurants, markets, and large-scale buyers with

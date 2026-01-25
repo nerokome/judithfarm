@@ -2,15 +2,15 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // <- add this
+import { usePathname } from "next/navigation"; 
 import { HiMenuAlt3, HiX, HiOutlineShoppingBag } from "react-icons/hi";
 import { RiLeafLine } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
-  const pathname = usePathname(); // get current route
+  const pathname = usePathname(); 
 
-  // Hide navbar on /prices
+  
   if (pathname === "/fish") return null;
 
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +43,7 @@ const Navbar = () => {
         }`}
       >
         <div className="flex justify-between items-center">
-          {/* Logo */}
+          
           <Link href="/#home" className="flex items-center gap-2 group">
             <div className="bg-[#2D5A27] p-2 rounded-xl group-hover:rotate-[15deg] transition-transform duration-300">
               <RiLeafLine size={22} className="text-white" />
@@ -53,7 +53,7 @@ const Navbar = () => {
             </span>
           </Link>
 
-          {/* Desktop Nav */}
+          
           <div className="hidden md:flex items-center space-x-10">
             {navLinks.map((link) => (
               <Link
@@ -67,7 +67,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Actions */}
+          
           <div className="hidden md:flex items-center space-x-4">
             <button className="p-2.5 text-stone-600 hover:bg-stone-100 rounded-full transition-colors">
               <HiOutlineShoppingBag size={22} />
@@ -80,7 +80,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile Toggle */}
+          
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -92,7 +92,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      
       <AnimatePresence>
         {isOpen && (
           <motion.div

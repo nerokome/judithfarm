@@ -104,6 +104,7 @@ const About = () => {
                 alt="Fish and poultry farm operations"
                 fill
                 className="object-cover scale-110"
+                loading="lazy"
               />
             </motion.div>
 
@@ -116,7 +117,7 @@ const About = () => {
               <p className="text-2xl md:text-3xl font-serif text-[#2D5A27] font-bold">
                 Reliable
               </p>
-              <p className="text-[9px] md:text-md text-stone-400 mt-1 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light">
+              <p className="text-md md:text-md text-stone-400 mt-1 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light">
                 Supply <br /> Chain
               </p>
             </motion.div>

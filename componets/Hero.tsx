@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiOutlineArrowRight, HiOutlineArrowLeft } from "react-icons/hi";
 import { RiLeafLine } from "react-icons/ri";
+import Link from "next/dist/client/link";
 
 const images = ["/frame1.jpg", "/frame2.jpg", "/frame3.jpg"];
 
@@ -22,14 +23,14 @@ const Hero = () => {
 
   return (
     <section
-      id="home" // <-- added ID for navbar scrolling
+      id="home" 
       className="relative min-h-screen flex items-center overflow-hidden bg-[#FBFBFA] pt-28 pb-12 lg:pt-0 lg:pb-0 scroll-mt-32" // scroll margin for fixed navbar
     >
-      {/* Background Glow */}
+      
       <div className="absolute top-0 right-0 w-full lg:w-[40%] h-[30%] lg:h-[40%] bg-[#2D5A27]/5 blur-[80px] lg:blur-[120px] rounded-full -z-10" />
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-        {/* TEXT */}
+        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -68,18 +69,18 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <Link href="/fish" >
             <button className="group bg-[#2D5A27] text-white px-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-3 shadow-xl shadow-green-900/20 hover:bg-[#1f3f1b] transition-all active:scale-95">
               View Our Products
               <HiOutlineArrowRight className="group-hover:translate-x-1 transition-transform" />
             </button>
+            </Link>
 
-            <button className="px-8 py-4 rounded-2xl font-bold border-2 border-stone-200 bg-white hover:bg-stone-50 transition-all text-stone-700">
-              Our Operations
-            </button>
+           
           </div>
         </motion.div>
 
-        {/* IMAGE */}
+        
         <div className="relative w-full">
           <div className="relative w-[90vw] max-w-md mx-auto h-[260px] sm:h-[380px] lg:h-auto lg:w-full lg:max-w-none lg:aspect-[4/5] rounded-[2rem] lg:rounded-[3.5rem] overflow-hidden border-[3px] sm:border-[5px] lg:border-[10px] border-white shadow-[0_15px_40px_rgba(0,0,0,0.08)] lg:shadow-[0_40px_100px_-15px_rgba(0,0,0,0.15)]">
             <AnimatePresence initial={false} mode="popLayout">
@@ -101,7 +102,7 @@ const Hero = () => {
               </motion.div>
             </AnimatePresence>
 
-            {/* Dots */}
+          
             <div className="absolute bottom-5 left-5 flex gap-2 z-30">
               {images.map((_, i) => (
                 <button
@@ -114,7 +115,7 @@ const Hero = () => {
               ))}
             </div>
 
-            {/* Arrows */}
+            
             <div className="absolute bottom-4 right-4 flex gap-2 z-30">
               <button
                 onClick={prevSlide}

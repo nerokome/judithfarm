@@ -45,7 +45,6 @@ export default function PricesPage() {
   );
 }
 
-/* ---------------- COMPONENTS ---------------- */
 
 const Category = ({ id, title, items }: { id: string; title: string; items: Item[] }) => (
   <section id={id}>
@@ -90,7 +89,12 @@ const SimpleCategory = ({ id, title, items }: { id: string; title: string; items
           className="bg-white rounded-3xl overflow-hidden border border-stone-100 shadow-sm"
         >
           <div className="relative h-40 sm:h-48 bg-stone-100">
-            <Image src={item.image} alt={item.type} fill className="object-cover" />
+            <Image 
+            src={item.image}
+             alt={item.type}
+              fill className="object-cover"
+              loading="lazy"
+               />
           </div>
 
           <div className="p-4 sm:p-6 flex justify-between items-center text-sm sm:text-base">
