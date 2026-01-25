@@ -23,11 +23,11 @@ const About = () => {
 
   return (
     <section
-      id="about" // <-- added ID for navbar scrolling
-      className="py-20 lg:py-32 bg-[#FBFBFA] overflow-hidden scroll-mt-32" // scroll margin for fixed navbar
+      id="about" 
+      className="py-20 lg:py-32 bg-[#FBFBFA] overflow-hidden scroll-mt-32" 
     >
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-        {/* TEXT SIDE */}
+      
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ const About = () => {
             </p>
           </div>
 
-          {/* FEATURES */}
+         
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {features.map((f, i) => (
               <div
@@ -81,11 +81,7 @@ const About = () => {
             ))}
           </div>
 
-          <div className="flex justify-center lg:justify-start pt-4">
-            <button className="bg-[#2D5A27] text-white px-10 py-4 rounded-full font-bold shadow-lg shadow-green-900/20 hover:bg-[#1a3617] transition-all active:scale-95">
-              View Our Operations
-            </button>
-          </div>
+          
         </motion.div>
 
         {/* IMAGE SIDE */}
@@ -104,7 +100,7 @@ const About = () => {
               className="relative w-full h-full rounded-full overflow-hidden border-[8px] md:border-[12px] border-white shadow-2xl z-10"
             >
               <Image
-                src="/frame4.jpg"
+                src="/farmfish.jpg"
                 alt="Fish and poultry farm operations"
                 fill
                 className="object-cover scale-110"

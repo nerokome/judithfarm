@@ -43,8 +43,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-bold text-stone-800 mb-1">Visit The Farm</h4>
                   <p className="text-stone-500 font-light leading-snug">
-                    1242 ,<br />
-                    Warri, Delta State 90210
+                   
+                    Engr. Judith 0. Etakibuebu Street, Delta state
                   </p>
                 </div>
               </div>
@@ -55,7 +55,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-stone-800 mb-1">Email Us</h4>
-                  <p className="text-stone-500 font-light">judithfarmandfeeds@gmai.com</p>
+                  <p className="text-stone-500 font-light">Judukofarmsandfeeds@gmail.com</p>
                 </div>
               </div>
 

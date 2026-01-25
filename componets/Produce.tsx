@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { HiOutlineArrowRight } from "react-icons/hi";
+import Link from "next/link";
 
 const collections = [
   {
@@ -111,10 +112,13 @@ const Produce = () => {
             Supplying restaurants, markets, and large-scale buyers with
             consistent quality products.
           </p>
-          <button className="text-[#2D5A27] font-bold flex items-center gap-2 group border-b-2 border-[#2D5A27]/20 pb-1 hover:border-[#2D5A27] transition-all">
-            Request Price List
-            <HiOutlineArrowRight className="group-hover:translate-x-2 transition-transform" />
-          </button>
+          <Link
+  href="/fish"
+  className="text-[#2D5A27] font-bold flex items-center gap-2 group border-b-2 border-[#2D5A27]/20 pb-1 hover:border-[#2D5A27] transition-all"
+>
+  Request Price List
+  <HiOutlineArrowRight className="group-hover:translate-x-2 transition-transform" />
+</Link>
         </div>
       </div>
     </section>

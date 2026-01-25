@@ -2,11 +2,17 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // <- add this
 import { HiMenuAlt3, HiX, HiOutlineShoppingBag } from "react-icons/hi";
 import { RiLeafLine } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
+  const pathname = usePathname(); // get current route
+
+  // Hide navbar on /prices
+  if (pathname === "/fish") return null;
+
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -25,8 +31,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-500 px-6 py-4 ${
-        scrolled ? "top-2" : "top-0"
+      className={`fixed w-full z-50 transition-all duration-500 px-6 ${
+        scrolled ? "top-1" : "top-0"
       }`}
     >
       <div
@@ -119,7 +125,6 @@ const Navbar = () => {
         )}
       </AnimatePresence>
 
-      {/* Global smooth scroll (same as your example) */}
       <style jsx global>{`
         html {
           scroll-behavior: smooth;
