@@ -114,10 +114,10 @@ const About = () => {
               transition={{ delay: 0.5 }}
               className="absolute -bottom-2 -left-4 md:-bottom-4 md:-left-10 bg-white p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-xl z-20 border border-stone-50"
             >
-              <p className="text-2xl md:text-3xl font-serif text-[#2D5A27] font-bold">
+              <p className="text-xl md:text-3xl font-serif text-[#2D5A27] font-bold">
                 Reliable
               </p>
-              <p className="text-md md:text-md text-stone-400 mt-1 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light">
+              <p className="text-sm md:text-md text-stone-400 mt-1 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light">
                 Supply <br /> Chain
               </p>
             </motion.div>
