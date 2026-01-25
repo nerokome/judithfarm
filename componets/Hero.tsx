@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <section
       id="home" 
-      className="relative min-h-screen flex items-center overflow-hidden bg-[#FBFBFA] pt-28 pb-12 lg:pt-0 lg:pb-0 scroll-mt-32" // scroll margin for fixed navbar
+      className="relative min-h-screen flex items-center overflow-hidden bg-[#FBFBFA] pt-28 pb-12 lg:pt-0 lg:pb-0 scroll-mt-32" 
     >
       
       <div className="absolute top-0 right-0 w-full lg:w-[40%] h-[30%] lg:h-[40%] bg-[#2D5A27]/5 blur-[80px] lg:blur-[120px] rounded-full -z-10" />
@@ -68,7 +68,7 @@ const Hero = () => {
             buyers.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <div className="flex items-center justify-center flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <Link href="/fish" >
             <button className="group bg-[#2D5A27] text-white px-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-3 shadow-xl shadow-green-900/20 hover:bg-[#1f3f1b] transition-all active:scale-95">
               View Our Products
