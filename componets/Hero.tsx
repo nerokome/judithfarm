@@ -7,7 +7,7 @@ import { HiOutlineArrowRight, HiOutlineArrowLeft } from "react-icons/hi";
 import { RiLeafLine } from "react-icons/ri";
 import Link from "next/dist/client/link";
 
-const images = ["/frame1.jpg", "/frame2.jpg", "/frame3.jpg"];
+const images = ["/frame1.jpg", "/frame2.jpg", ];
 
 const Hero = () => {
   const [current, setCurrent] = useState(0);
