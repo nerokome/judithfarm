@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import Link from "next/link";
 
-/* ------------------ PRODUCTS (IMAGES) ------------------ */
+
 const products = [
   {
     id: 1,
@@ -18,7 +18,7 @@ const products = [
   {
     id: 2,
     title: "Dry Catfish Fish",
-    subtitle: "Catfish, Tilapia & Freshwater Species",
+    subtitle: "Catfish dried to perfection for long shelf life",
     img: "/judokofish.jpg",
     accent: "bg-blue-500/10 text-blue-700",
   },
@@ -81,7 +81,7 @@ const Produce = () => {
           </h3>
         </div>
 
-        {/* ---------- PRODUCT GRID ---------- */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
           {products.map((item, idx) => (
             <motion.div
