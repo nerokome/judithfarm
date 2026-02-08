@@ -55,7 +55,7 @@ export const priceList = {
   feed: [
     {
       type: "Fish Feed (Floating)",
-      image: "/fisfeed.jpg",
+      image: "/judofeed.jpeg",
       price: "₦10,500 / bag",
     },
     {
