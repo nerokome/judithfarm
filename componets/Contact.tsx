@@ -132,7 +132,8 @@ We’ve received your message and will get back to you shortly.
                   <p className="text-stone-500 font-light">Mon — Sat: 8am - 5pm</p>
                 </div>
               </div>
-               <div className="flex gap-6">
+
+              <div className="flex gap-6">
                 <div className="w-14 h-14 shrink-0 bg-white rounded-2xl shadow-sm border border-stone-100 flex items-center justify-center text-blue-600">
                   <RiTimeLine size={24} />
                 </div>
@@ -149,14 +150,28 @@ We’ve received your message and will get back to you shortly.
                 Socials
               </p>
               <div className="flex gap-4">
-                {[<RiInstagramLine />, <RiFacebookCircleLine />, <RiTwitterXLine />].map((icon, i) => (
-                  <button
+                
+                {[
+                  {
+                    icon: <RiInstagramLine />,
+                    link: "https://www.instagram.com/farmsfeeds?igsh=MWI4MWRkempzOGR0eQ==",
+                  },
+                  {
+                    icon: <RiFacebookCircleLine />,
+                    link: "https://www.facebook.com/share/18j1F4ujYj/?mibextid=wwXIfr",
+                  },
+                ].map((item, i) => (
+                  <a
                     key={i}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-12 h-12 rounded-full border border-stone-200 flex items-center justify-center text-stone-600 hover:bg-[#2D5A27] hover:text-white hover:border-[#2D5A27] transition-all"
                   >
-                    {icon}
-                  </button>
+                    {item.icon}
+                  </a>
                 ))}
+
               </div>
             </div>
           </div>
