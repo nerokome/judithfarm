@@ -85,7 +85,7 @@ We’ve received your message and will get back to you shortly.
             Connect With Us
           </h2>
           <h3 className="text-5xl md:text-6xl font-serif text-stone-800 leading-tight">
-            Let’s start a <span className="italic text-[#2D5A27]">conversation.</span>
+            Let’s start a <span className="italic text-blue-500">conversation.</span>
           </h3>
           <p className="text-stone-500 mt-6 text-lg font-light leading-relaxed">
             Whether you are interested in wholesale supply, a farm visit, or just want 
@@ -100,7 +100,7 @@ We’ve received your message and will get back to you shortly.
             <div className="space-y-8">
 
               <div className="flex gap-6">
-                <div className="w-14 h-14 shrink-0 bg-white rounded-2xl shadow-sm border border-stone-100 flex items-center justify-center text-[#2D5A27]">
+                <div className="w-14 h-14 shrink-0 bg-white rounded-2xl shadow-sm border border-stone-100 flex items-center justify-center text-blue-600">
                   <RiMapPinLine size={24} />
                 </div>
                 <div>
@@ -112,7 +112,7 @@ We’ve received your message and will get back to you shortly.
               </div>
 
               <div className="flex gap-6">
-                <div className="w-14 h-14 shrink-0 bg-white rounded-2xl shadow-sm border border-stone-100 flex items-center justify-center text-[#2D5A27]">
+                <div className="w-14 h-14 shrink-0 bg-white rounded-2xl shadow-sm border border-stone-100 flex items-center justify-center text-blue-600">
                   <RiMailLine size={24} />
                 </div>
                 <div>
@@ -124,7 +124,7 @@ We’ve received your message and will get back to you shortly.
               </div>
 
               <div className="flex gap-6">
-                <div className="w-14 h-14 shrink-0 bg-white rounded-2xl shadow-sm border border-stone-100 flex items-center justify-center text-[#2D5A27]">
+                <div className="w-14 h-14 shrink-0 bg-white rounded-2xl shadow-sm border border-stone-100 flex items-center justify-center text-blue-600">
                   <RiTimeLine size={24} />
                 </div>
                 <div>
@@ -132,11 +132,20 @@ We’ve received your message and will get back to you shortly.
                   <p className="text-stone-500 font-light">Mon — Sat: 8am - 5pm</p>
                 </div>
               </div>
+               <div className="flex gap-6">
+                <div className="w-14 h-14 shrink-0 bg-white rounded-2xl shadow-sm border border-stone-100 flex items-center justify-center text-blue-600">
+                  <RiTimeLine size={24} />
+                </div>
+                <div>
+                  <h4 className="font-bold text-stone-800 mb-1">Call us</h4>
+                  <p className="text-stone-500 font-light">+27 66 487 6760</p>
+                </div>
+              </div>
 
             </div>
 
             <div className="pt-8 border-t border-stone-200">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-stone-400 mb-6">
+              <p className="text-md font-bold uppercase tracking-widest text-stone-400 mb-6">
                 Socials
               </p>
               <div className="flex gap-4">
@@ -206,7 +215,7 @@ We’ve received your message and will get back to you shortly.
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[#2D5A27] text-white py-5 rounded-2xl font-bold transition disabled:opacity-50"
+                className="w-full bg-blue-600 text-white py-5 rounded-2xl font-bold transition disabled:opacity-50"
               >
                 {isSubmitting ? "Sending…" : "Send Message"}
               </button>

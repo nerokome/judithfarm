@@ -77,7 +77,7 @@ const Produce = () => {
           </h2>
           <h3 className="text-3xl md:text-6xl font-serif text-stone-800 leading-tight">
             Reliable supply from our <br />
-            <span className="italic text-[#2D5A27]">fish & poultry farms.</span>
+            <span className="italic text-blue-500">fish & poultry farms.</span>
           </h3>
         </div>
 
@@ -127,7 +127,7 @@ const Produce = () => {
 
         <div className="mt-32">
           <h3 className="text-2xl md:text-4xl font-serif text-stone-800 mb-10 text-center lg:text-left">
-            <span className="italic text-[#2D5A27]">Operations</span>  In Action
+            <span className="italic text-blue-500">Operations</span>  In Action
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -173,7 +173,7 @@ const Produce = () => {
           </p>
           <Link
             href="/fish"
-            className="text-[#2D5A27] font-bold flex items-center gap-2 group border-b-2 border-[#2D5A27]/20 pb-1 hover:border-[#2D5A27]"
+            className="text-blue-500 font-bold flex items-center gap-2 group border-b-2 border-[#2D5A27]/20 pb-1 hover:border-[#2D5A27]"
           >
             Request Price List
             <HiOutlineArrowRight className="group-hover:translate-x-2 transition-transform" />

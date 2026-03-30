@@ -45,11 +45,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           
           <Link href="/#home" className="flex items-center gap-2 group">
-            <div className="bg-[#2D5A27] p-2 rounded-xl group-hover:rotate-[15deg] transition-transform duration-300">
+            <div className="bg-blue-500 p-2 rounded-xl group-hover:rotate-[15deg] transition-transform duration-300">
               <RiLeafLine size={22} className="text-white" />
             </div>
             <span className="text-md sm:text-xl font-bold tracking-tighter text-stone-800 uppercase">
-              Juduko Farms and <span className="text-[#2D5A27]">Feeds</span>
+              Juduko Farms and <span className="text-blue-500">Feeds</span>
             </span>
           </Link>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm font-semibold text-stone-500 hover:text-[#2D5A27] transition-colors relative group"
+                className="text-sm font-semibold text-stone-500 hover:text-blue-500 transition-colors relative group"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F4A261] transition-all duration-300 group-hover:w-full" />
@@ -74,7 +74,7 @@ const Navbar = () => {
             </button>
             <Link
               href="/#contact"
-              className="bg-[#2D5A27] text-white px-7 py-3 rounded-2xl text-sm font-bold hover:bg-[#1f3f1b] transition-all active:scale-95"
+              className="bg-blue-500 text-white px-7 py-3 rounded-2xl text-sm font-bold hover:bg-[#1f3f1b] transition-all active:scale-95"
             >
               Contact Us
             </Link>
@@ -117,7 +117,7 @@ const Navbar = () => {
             <Link
               href="/#contact"
               onClick={() => setIsOpen(false)}
-              className="bg-[#2D5A27] text-white w-full py-5 rounded-2xl font-bold text-lg text-center"
+              className="bg-blue-500 text-white w-full py-5 rounded-2xl font-bold text-lg text-center"
             >
               Get in Touch
             </Link>

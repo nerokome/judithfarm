@@ -37,14 +37,14 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-center lg:text-left flex flex-col items-center lg:items-start"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#2D5A27]/10 text-[#2D5A27] text-[10px] font-bold uppercase tracking-[0.2em] mb-6 border border-[#2D5A27]/5">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#2D5A27]/10 text-blue-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-6 border border-[#2D5A27]/5">
             <RiLeafLine size={14} />
             Fish & Poultry Farming
           </div>
 
           <h1 className="text-5xl md:text-7xl xl:text-8xl font-serif text-stone-800 leading-[1.1] mb-6 tracking-tight">
             Supplying fish <br />
-            <span className="italic text-[#2D5A27] relative inline-block">
+            <span className="italic text-blue-500 relative inline-block">
               and poultry
               <svg
                 className="absolute -bottom-2 left-0 w-full opacity-60"
@@ -70,7 +70,7 @@ const Hero = () => {
 
           <div className="flex items-center justify-center flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <Link href="/fish" >
-            <button className="group bg-[#2D5A27] text-white px-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-3 shadow-xl shadow-green-900/20 hover:bg-[#1f3f1b] transition-all active:scale-95">
+            <button className=" bg-blue-500 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-3 shadow-xl shadow-green-900/20 hover:bg-[#1f3f1b] transition-all active:scale-95">
               View Our Products
               <HiOutlineArrowRight className="group-hover:translate-x-1 transition-transform" />
             </button>

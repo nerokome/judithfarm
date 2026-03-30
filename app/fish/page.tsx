@@ -18,7 +18,7 @@ export default function PricesPage() {
         <div className="flex justify-start">
           <Link
             href="/"
-            className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#2D5A27] text-white rounded-full hover:bg-[#1f3f1b] transition-colors"
+            className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-blue-500 hover:bg-blue-700 text-white rounded-full hover:bg-[#1f3f1b] transition-colors"
           >
             <HiArrowLeft size={20} className="sm:text-xl" />
           </Link>
@@ -48,7 +48,7 @@ export default function PricesPage() {
 
 const Category = ({ id, title, items }: { id: string; title: string; items: Item[] }) => (
   <section id={id}>
-    <h2 className="text-2xl sm:text-3xl font-serif text-[#2D5A27] mb-8 sm:mb-12">{title}</h2>
+    <h2 className="text-2xl sm:text-3xl font-serif text-stone-900 mb-8 sm:mb-12">{title}</h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 lg:gap-20">
       {items.map((item, i) => (
@@ -61,13 +61,13 @@ const Category = ({ id, title, items }: { id: string; title: string; items: Item
           </div>
 
           <div className="p-4 sm:p-8 space-y-3 sm:space-y-4">
-            <h3 className="text-lg sm:text-xl font-bold text-stone-800">{item.name}</h3>
+            <h3 className="text-lg sm:text-xl font-bold text-blue-400">{item.name}</h3>
 
             <ul className="space-y-1 sm:space-y-2 text-sm sm:text-base">
               {item.varieties.map((v, idx) => (
                 <li key={idx} className="flex justify-between text-stone-600">
                   <span>{v.type}</span>
-                  <span className="font-semibold">{v.price}</span>
+                 
                 </li>
               ))}
             </ul>
@@ -80,7 +80,7 @@ const Category = ({ id, title, items }: { id: string; title: string; items: Item
 
 const SimpleCategory = ({ id, title, items }: { id: string; title: string; items: SimpleItem[] }) => (
   <section id={id}>
-    <h2 className="text-2xl sm:text-3xl font-serif text-[#2D5A27] mb-8 sm:mb-12">{title}</h2>
+    <h2 className="text-2xl sm:text-3xl font-serif text-stone-900 mb-8 sm:mb-12">{title}</h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12">
       {items.map((item, i) => (
@@ -98,8 +98,8 @@ const SimpleCategory = ({ id, title, items }: { id: string; title: string; items
           </div>
 
           <div className="p-4 sm:p-6 flex justify-between items-center text-sm sm:text-base">
-            <span className="font-medium text-stone-700">{item.type}</span>
-            <span className="font-bold text-stone-800">{item.price}</span>
+            <span className="font-medium text-blue-400">{item.type}</span>
+            
           </div>
         </div>
       ))}

@@ -11,7 +11,7 @@ const About = () => {
       icon: <RiSeedlingLine />,
       title: "Healthy Rearing",
       desc: "Controlled feeding and clean water systems.",
-      color: "text-emerald-600 bg-emerald-50",
+      color: "text-blue-600 bg-blue-50",
     },
     {
       icon: <RiShieldCheckLine />,
@@ -41,7 +41,7 @@ const About = () => {
 
             <h3 className="text-4xl md:text-5xl font-serif text-stone-800 leading-tight">
               Built on fish farming <br />
-              <span className="italic text-[#2D5A27]">
+              <span className="italic text-blue-500">
                 and poultry production.
               </span>
             </h3>
@@ -114,7 +114,7 @@ const About = () => {
               transition={{ delay: 0.5 }}
               className="absolute -bottom-2 -left-4 md:-bottom-4 md:-left-10 bg-white p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-xl z-20 border border-stone-50"
             >
-              <p className="text-2xl md:text-3xl font-serif text-[#2D5A27] font-bold">
+              <p className="text-2xl md:text-3xl font-serif text-blue-500 font-bold">
                 Reliable
               </p>
               <p className="text-[9px] md:text-xl text-stone-400 mt-1 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light">
@@ -128,7 +128,7 @@ const About = () => {
               transition={{ delay: 0.7 }}
               className="absolute top-2 -right-2 md:top-0 md:-right-4 bg-white/90 backdrop-blur-md p-3 md:p-4 rounded-xl md:rounded-2xl shadow-lg z-20 border border-white"
             >
-              <div className="w-8 h-8 md:w-10 md:h-10 bg-[#2D5A27] rounded-lg md:rounded-xl flex items-center justify-center text-white">
+              <div className="w-8 h-8 md:w-10 md:h-10 bg-blue-500 rounded-lg md:rounded-xl flex items-center justify-center text-white">
                 <RiEarthLine size={20} />
               </div>
             </motion.div>
